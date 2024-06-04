@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button{
+    height: 15vh;
+    width: 15vw;
+    color: white;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    column-gap: 2rem;
+}
+#red{
+    background-color: red;
+}
+#orange{
+    background-color: orange;
+}
+#blue{
+    background-color: blue;
+}
+#black{
+    background-color: black;
+}
+#green{
+    background-color: green;
+}

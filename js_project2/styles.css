@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: burlywood;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100vw;
+}
+
+#btn-submit{
+    height: 2rem;
+    width: 10rem;
+    background-color: rgb(2, 48, 32);
+    color: azure;
+    text-align: center;
+    margin-left: 4rem;
+}
