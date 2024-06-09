@@ -1,0 +1,151 @@
+/* Reset and Box Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Container Parent */
+.container-parent {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    width: 90vw;
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/* Input Field */
+input {
+    height: 50px;
+    flex: 1;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Add Button */
+button {
+    height: 50px;
+    width: 100px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff6000;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+/* Task Item */
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fafafa;
+    transition: background-color 0.3s;
+}
+
+ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Task Text */
+ul li span {
+    flex: 1;
+    word-break: break-word;
+    padding: 0 0.5rem;
+}
+
+/* Delete Button */
+span.delete {
+    color: #e74c3c;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+span.delete:hover {
+    color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 95vw;
+        padding: 1rem;
+    }
+    input {
+        width: 60%;
+        margin-right: 0.5rem;
+    }
+    button {
+        width: 35%;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        width: 100vw;
+        padding: 1rem;
+    }
+    input {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    button {
+        width: 100%;
+    }
+    ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    span.delete {
+        align-self: flex-end;
+    }
+}
