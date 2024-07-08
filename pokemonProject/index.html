@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1>Pokemon Cards</h1>
+        <input id="searchInput" type="text" placeholder="search by name">
+        <div>
+            <select name="type" id="type">
+                <option value="grass">grass</option>
+                <option value="bug">bug</option>
+                <option value="normal">normal</option>
+                <option value="electric">electric</option>
+                <option value="water">water</option>
+                <option value="fire">fire</option>
+                <option value="poison">poison</option>
+            </select>
+            <button id="filterType">Filter by type</button>
+            <button><a href="index.html">Reset</a></button>
+        </div>
+    </div>
+    <div class="cards-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
